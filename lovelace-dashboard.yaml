@@ -1,0 +1,156 @@
+views:
+  - title: Home
+    type: panel
+    badges: []
+    cards:
+      - type: picture-elements
+        style: |
+          ha-card {
+            {% set ANGLE = states('input_number.test1') + 'deg' %}
+            {% set ANGLE2 = ((states('input_number.test1') | int) + 90) | string  + 'deg' %}
+            --my-transform-style: translate(-50%,-50%) rotate({{ANGLE}});
+            --my-transform-style2: translate(-50%,-50%) rotate({{ANGLE2}});
+          }
+        elements:
+          - type: custom:slider-entity-row
+            entity: input_number.test1
+            style:
+              left: 40%
+              top: 5%
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 93.1%
+              left: 20.7%
+              color: blue
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style2)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 79.7%
+              left: 28.6%
+              color: blue
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 79.7%
+              left: 53.6%
+              color: blue
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 79.7%
+              left: 69.6%
+              color: blue
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 93.1%
+              left: 77.6%
+              color: blue
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style2)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 6.74%
+              left: 20.7%
+              color: red
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style2)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 19.7%
+              left: 28.6%
+              color: red
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 19.7%
+              left: 53.6%
+              color: red
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 6.74%
+              left: 61.5%
+              color: red
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style2)
+          - type: icon
+            icon: mdi:minus
+            style:
+              top: 19.7%
+              left: 96.0%
+              color: red
+              '--mdc-icon-size': 13vw
+              transform: var(--my-transform-style)
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 45.5%
+              left: 56%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 49.5%
+              left: 56%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 54%
+              left: 56%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 58%
+              left: 56%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 45.5%
+              left: 74.7%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 49.5%
+              left: 74.7%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 54%
+              left: 74.7%
+              font-size: 2.1vw
+              text-align: start
+          - type: state-label
+            entity: sensor.sun_next_dawn
+            style:
+              top: 58%
+              left: 74.7%
+              font-size: 2.1vw
+              text-align: start
+        image: /local/images/co2_mnemo5.png
