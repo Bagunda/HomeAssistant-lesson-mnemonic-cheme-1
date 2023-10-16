@@ -1,5 +1,5 @@
 # HomeAssistant-lesson-mnemonic-cheme-1
-Урок по составлению экрана мнемосхемы в Home Assistant
+Урок по составлению экрана мнемосхемы в Home Assistant (вентсистема)
 
 ![image](https://github.com/Bagunda/HomeAssistant-lesson-mnemonic-cheme-1/assets/16766521/008e8d63-b392-48da-bb78-7315a56bd095)
 
